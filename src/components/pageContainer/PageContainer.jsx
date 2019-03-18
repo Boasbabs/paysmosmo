@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import { Layout, Menu, Breadcrumb, Icon, List } from "antd";
-import Navbar from "../navbar"
-
-const { SubMenu } = Menu;
-const { Header, Content, Sider } = Layout;
+import { Layout } from "antd";
+import Navbar from "../navbar";
+import PageHeader from "../pageHeader"
 
 class PageContainer extends Component {
   state = {};
@@ -12,8 +10,7 @@ class PageContainer extends Component {
       <Layout>
         <Navbar/>
         <Layout>
-          
-          
+          <PageHeader/>
         </Layout>
       </Layout>
     );
