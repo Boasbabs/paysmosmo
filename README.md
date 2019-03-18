@@ -1,3 +1,7 @@
+# Paysmosmo Ecommerce
+
+This is a react app developed according to mockup. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -49,6 +53,7 @@ Colors from [flat UI color](https://flatuicolors.com/palette/defo)
 
 - Cloud : `#ecf0f1`
 - Nephritis: `#27ae60`
+- Yellow `#f1d51c`
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
@@ -56,13 +61,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/co
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
 ### Deployment
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Layout, Row, Col, Menu, Carousel, PageHeader, Typography, Button } from "antd";
+import { Layout, Row, Col, Menu, Carousel, PageHeader, Button } from "antd";
 import "./PageContent.css";
 import BannerImage from "../images/landing-image.jpg";
 
@@ -14,9 +14,9 @@ class PageContent extends Component {
       <React.Fragment>
         <Content className="page-content--container">
           <Row gutter={24}>
-            <Col span={7}>
+            <Col span={7} className="side-menu--shadow">
               <PageHeader title="Categories" className="page-content--header" />
-              <Menu style={{ width: "100%" }} mode="vertical">
+              <Menu style={{ width: "100%", padding: 0 }} mode="vertical">
                 <SubMenu key="sub1" title={<span>Navigation One</span>}>
                   <Menu.Item key="1">Option 1</Menu.Item>
                   <Menu.Item key="2">Option 2</Menu.Item>
