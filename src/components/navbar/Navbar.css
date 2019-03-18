@@ -1,0 +1,23 @@
+.navbar-header {
+  background-color: white;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-menu {
+  border-bottom: none;
+  float: right;
+  line-height: 49px;
+}
+
+.navbar-menu--item {
+  padding: 0 10px;
+}
+.navbar-menu--item.signup {
+    /* Nephritis from flat UI color */
+  color: #27ae60; 
+}
+
