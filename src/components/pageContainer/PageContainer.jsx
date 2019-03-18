@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Layout } from "antd";
 import Navbar from "../navbar";
 import PageHeader from "../pageHeader"
+import PageContent from "../pageContent"
 
 class PageContainer extends Component {
   state = {};
@@ -11,6 +12,7 @@ class PageContainer extends Component {
         <Navbar/>
         <Layout>
           <PageHeader/>
+          <PageContent/>
         </Layout>
       </Layout>
     );
