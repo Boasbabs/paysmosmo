@@ -18,7 +18,7 @@ class ProductSegment extends Component {
       <Content className="product-segment--container">
         <Card title={heading} className="card-shadow">
           <Row gutter={16}>
-            <Col span={6}>
+            <Col xs={24} sm={24} md={12} lg={6} xl={6}>
               <Card
                 className="product-card"
                 hoverable
@@ -28,15 +28,15 @@ class ProductSegment extends Component {
               >
                 <p>Lorem Ipsum</p>
                 <p>
-                  <Rate defaultValue={3} />
+                  <Rate defaultValue={4} />
                 </p>
                 <p>
-                  <strike>N 15,000.00</strike>{" "}
+                  <del>N 15,000.00</del>{" "}
                   <span style={{ float: "right" }}>N 15,000.00</span>
                 </p>
               </Card>
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
               <Card
                 className="product-card"
                 hoverable
@@ -46,15 +46,15 @@ class ProductSegment extends Component {
               >
                 <p>Lorem Ipsum</p>
                 <p>
-                  <Rate defaultValue={3} />
+                  <Rate defaultValue={4} />
                 </p>
                 <p>
-                  <strike>N 15,000.00</strike>{" "}
+                  <del>N 15,000.00</del>{" "}
                   <span style={{ float: "right" }}>N 15,000.00</span>
                 </p>
               </Card>
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
               <Card
                 className="product-card"
                 hoverable
@@ -64,15 +64,15 @@ class ProductSegment extends Component {
               >
                 <p>Lorem Ipsum</p>
                 <p>
-                  <Rate defaultValue={3} />
+                  <Rate defaultValue={4} />
                 </p>
                 <p>
-                  <strike>N 15,000.00</strike>{" "}
+                  <del>N 15,000.00</del>{" "}
                   <span style={{ float: "right" }}>N 15,000.00</span>
                 </p>
               </Card>
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
               <Card
                 className="product-card"
                 hoverable
@@ -82,10 +82,10 @@ class ProductSegment extends Component {
               >
                 <p>Lorem Ipsum</p>
                 <p>
-                  <Rate defaultValue={3} />
+                  <Rate defaultValue={4} />
                 </p>
                 <p>
-                  <strike>N 15,000.00</strike>{" "}
+                  <del>N 15,000.00</del>{" "}
                   <span style={{ float: "right" }}>N 15,000.00</span>
                 </p>
               </Card>

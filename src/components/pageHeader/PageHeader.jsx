@@ -22,10 +22,10 @@ class PageHeader extends Component {
       <Layout style={{ padding: "50px 50px 24px", backgroundColor: "#fff" }}>
         <Content className="page-header--container">
           <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-            <Col span={4}>
+            <Col xs={24} sm={8} md={6} lg={4} xl={4}>
               <img src={Logo} alt="Paysmosmo logo" className="logo" />
             </Col>
-            <Col span={15}>
+            <Col xs={24} sm={8} md={10} lg={15} xl={15}>
               <Search
                 className="page-header--search"
                 placeholder="Search for products"
@@ -37,15 +37,15 @@ class PageHeader extends Component {
                 size="large"
               />
             </Col>
-            <Col span={5}>
+            <Col xs={24} sm={8} md={8} lg={5} xl={5}>
               <Row>
-                <Col span={8}>
+                <Col xs={8} sm={8} md={6} lg={8} xl={8}>
                   <IconText theme="outlined" type="shopping-cart" text="cart" />
                 </Col>
-                <Col span={8}>
+                <Col xs={8} sm={8} md={6} lg={8} xl={8}>
                   <IconText theme="filled" type="heart" text="wishlist" />
                 </Col>
-                <Col span={8}>
+                <Col xs={8} sm={8} md={6} lg={8} xl={8}>
                   <IconText theme="outlined" type="bell" text="notification" />
                 </Col>
               </Row>

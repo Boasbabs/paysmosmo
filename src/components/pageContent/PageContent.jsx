@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Layout, Row, Col, Menu, Carousel, PageHeader, Button } from "antd";
 import "./PageContent.css";
-import BannerImage from "../images/landing-image.jpg";
 
 const { Content } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -14,7 +13,7 @@ class PageContent extends Component {
       <React.Fragment>
         <Content className="page-content--container">
           <Row gutter={24}>
-            <Col span={7} className="side-menu--shadow">
+            <Col xs={24} sm={24} md={12} lg={7} xl={7} className="side-menu--shadow">
               <PageHeader title="Categories" className="page-content--header" />
               <Menu style={{ width: "100%", padding: 0 }} mode="vertical">
                 <SubMenu key="sub1" title={<span>Navigation One</span>}>
@@ -45,7 +44,7 @@ class PageContent extends Component {
                 </SubMenu>
               </Menu>
             </Col>
-            <Col span={17}>
+            <Col xs={24} sm={24} md={12} lg={17} xl={17}>
               <Carousel autoplay className="">
 
                 <div className="carousel ">
