@@ -23,11 +23,11 @@
   padding-right: 0 !important;
   border: none !important;
 }
-.product-card svg {
+.product-card .icon {
   height: 0.7em;
   width: 0.7em;
 }
-.product-card .ant-card-body p {
+.product-card .ant-card-body div {
   font-size: 12px;
   line-height: 12px;
   margin-bottom: 10px;

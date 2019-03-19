@@ -54,6 +54,9 @@ Colors from [flat UI color](https://flatuicolors.com/palette/defo)
 - Cloud : `#ecf0f1`
 - Nephritis: `#27ae60`
 - Yellow `#f1d51c`
+- Footer Text Gray `#989898`
+- Darker Grey `#26262E`
+- Dark Grey `#2D2E37`
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 

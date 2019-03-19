@@ -24,22 +24,22 @@ class PageContent extends Component {
                   <Menu.Item key="5">Option 5</Menu.Item>
                   <Menu.Item key="6">Option 6</Menu.Item>
                 </SubMenu>
-                <SubMenu key="sub4" title={<span>Navigation 3</span>}>
+                <SubMenu key="sub3" title={<span>Navigation 3</span>}>
                   <Menu.Item key="9">Option 9</Menu.Item>
                 </SubMenu>
                 <SubMenu key="sub4" title={<span>Navigation 4</span>}>
                   <Menu.Item key="9">Option 9</Menu.Item>
                 </SubMenu>
-                <SubMenu key="sub4" title={<span>Navigation 5</span>}>
+                <SubMenu key="sub5" title={<span>Navigation 5</span>}>
                   <Menu.Item key="9">Option 9</Menu.Item>
                 </SubMenu>
-                <SubMenu key="sub4" title={<span>Navigation 6</span>}>
+                <SubMenu key="sub6" title={<span>Navigation 6</span>}>
                   <Menu.Item key="9">Option 9</Menu.Item>
                 </SubMenu>
-                <SubMenu key="sub4" title={<span>Navigation 7</span>}>
+                <SubMenu key="sub7" title={<span>Navigation 7</span>}>
                   <Menu.Item key="9">Option 9</Menu.Item>
                 </SubMenu>
-                <SubMenu key="sub4" title={<span>Navigation 8</span>}>
+                <SubMenu key="sub8" title={<span>Navigation 8</span>}>
                   <Menu.Item key="9">Option 9</Menu.Item>
                 </SubMenu>
               </Menu>

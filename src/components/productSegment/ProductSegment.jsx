@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import { Layout, Row, Col, Menu, Rate, Card } from "antd";
+import { Layout, Row, Col, Rate, Card } from "antd";
 import "./ProductSegment.css";
 import CardImage from "../images/card-image.jpg";
 
 const { Content } = Layout;
-const { Meta } = Card;
-const SubMenu = Menu.SubMenu;
 
 class ProductSegment extends Component {
   constructor(props) {
@@ -26,14 +24,14 @@ class ProductSegment extends Component {
                 cover={<img alt="example" src={CardImage} />}
                 bordered={false}
               >
-                <p>Lorem Ipsum</p>
-                <p>
+                <div>Lorem Ipsum</div>
+                <div>
                   <Rate defaultValue={4} />
-                </p>
-                <p>
+                </div>
+                <div>
                   <del>N 15,000.00</del>{" "}
                   <span style={{ float: "right" }}>N 15,000.00</span>
-                </p>
+                </div>
               </Card>
             </Col>
             <Col xs={24} sm={12} md={12} lg={6} xl={6}>
@@ -44,14 +42,14 @@ class ProductSegment extends Component {
                 cover={<img alt="example" src={CardImage} />}
                 bordered={false}
               >
-                <p>Lorem Ipsum</p>
-                <p>
+                <div>Lorem Ipsum</div>
+                <div>
                   <Rate defaultValue={4} />
-                </p>
-                <p>
+                </div>
+                <div>
                   <del>N 15,000.00</del>{" "}
                   <span style={{ float: "right" }}>N 15,000.00</span>
-                </p>
+                </div>
               </Card>
             </Col>
             <Col xs={24} sm={12} md={12} lg={6} xl={6}>
@@ -62,14 +60,14 @@ class ProductSegment extends Component {
                 cover={<img alt="example" src={CardImage} />}
                 bordered={false}
               >
-                <p>Lorem Ipsum</p>
-                <p>
+                <div>Lorem Ipsum</div>
+                <div>
                   <Rate defaultValue={4} />
-                </p>
-                <p>
+                </div>
+                <div>
                   <del>N 15,000.00</del>{" "}
                   <span style={{ float: "right" }}>N 15,000.00</span>
-                </p>
+                </div>
               </Card>
             </Col>
             <Col xs={24} sm={12} md={12} lg={6} xl={6}>
@@ -80,14 +78,14 @@ class ProductSegment extends Component {
                 cover={<img alt="example" src={CardImage} />}
                 bordered={false}
               >
-                <p>Lorem Ipsum</p>
-                <p>
+                <div>Lorem Ipsum</div>
+                <div>
                   <Rate defaultValue={4} />
-                </p>
-                <p>
+                </div>
+                <div>
                   <del>N 15,000.00</del>{" "}
                   <span style={{ float: "right" }}>N 15,000.00</span>
-                </p>
+                </div>
               </Card>
             </Col>
           </Row>

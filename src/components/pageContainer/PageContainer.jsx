@@ -4,6 +4,7 @@ import Navbar from "../navbar";
 import PageHeader from "../pageHeader";
 import PageContent from "../pageContent";
 import ProductSegment from "../productSegment";
+import PageFooter from "../pageFooter";
 
 class PageContainer extends Component {
   state = {};
@@ -16,6 +17,7 @@ class PageContainer extends Component {
           <PageContent/>
           <ProductSegment heading="Explore New Categories"></ProductSegment>
           <ProductSegment heading="Explore New Stuffs"></ProductSegment>
+          <PageFooter/>
         </Layout>
       </Layout>
     );
