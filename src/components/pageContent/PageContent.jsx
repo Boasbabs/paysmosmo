@@ -1,5 +1,14 @@
 import React, { Component } from "react";
-import { Layout, Row, Col, Menu, Carousel, PageHeader, Button } from "antd";
+import {
+  Layout,
+  Row,
+  Col,
+  Menu,
+  Carousel,
+  PageHeader,
+  Button,
+  Spin
+} from "antd";
 import axios from "axios";
 import { CATEGORY_ENDPOINT, ACCESS_TOKEN } from "../constants";
 import "./PageContent.css";
@@ -19,11 +28,10 @@ class PageContent extends Component {
         const categoryData = response.data;
         this.setState({ categoryData });
       })
-      .catch(function(error) {
+      .catch(error => {
         // handle error
         console.log(error);
       });
-   
   }
   render() {
     // destruction categoryData from state
@@ -42,14 +50,20 @@ class PageContent extends Component {
             >
               <PageHeader title="Categories" className="page-content--header" />
               <Menu style={{ width: "100%", padding: 0 }} mode="vertical">
-              {/* Iterate over the categoryData using Js Array map method */}
-                {categoryData.map(({ name, id }) => (
-                  <SubMenu key={id} title={<span>{name}</span>}>
-                    <Menu.Item key="1">Option 1</Menu.Item>
-                    <Menu.Item key="2">Option 2</Menu.Item>
-                  </SubMenu>
-                ))}
-                
+                {/* Iterate over the categoryData using Js Array map method */}
+                {categoryData.length == 0 ? (
+                  // Display spinner while data is fetch
+                  <div className="loading-container">
+                  <Spin size="large" tip="Loading..." />
+                  </div>
+                ) : (
+                  categoryData.map(({ name, id }) => (
+                    <SubMenu key={id} title={<span>{name}</span>}>
+                      <Menu.Item key="1">Option 1</Menu.Item>
+                      <Menu.Item key="2">Option 2</Menu.Item>
+                    </SubMenu>
+                  ))
+                )}
               </Menu>
             </Col>
             <Col xs={24} sm={24} md={12} lg={17} xl={17}>

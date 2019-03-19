@@ -87,6 +87,15 @@
   border: 2px #f1d51c solid;
 }
 
+.loading-container {
+  text-align: center;
+  background: transparent;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}
+
 @media screen and (max-width: 992px) {
   .carousel--header {
     margin: 0;
