@@ -1,6 +1,6 @@
 # Paysmosmo Ecommerce
 
-This is a react app developed according to mockup. 
+This is a react app developed according to mockup by [Babalola Simeon](https://twitter.com/boasbabs)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -29,7 +29,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The site was deployed on [Netlify](https://natter-paysmosmo.netlify.com/) for more information.
 
 ### `npm run eject`
 
@@ -44,7 +44,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Libraries
 
 - [React](https://reactjs.org/) through [Create React App](https://facebook.github.io/create-react-app/docs/).
-- [Ant Design](https://ant.design/).
+- [Ant Design](https://ant.design/). - UI Library
+- [axios](https://github.com/axios/axios) — To make API calls.
 
 
 ### Color Theme
@@ -58,17 +59,12 @@ Colors from [flat UI color](https://flatuicolors.com/palette/defo)
 - Darker Grey `#26262E`
 - Dark Grey `#2D2E37`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+This project is deployed here: https://natter-paysmosmo.netlify.com/
 
-### `npm run build` fails to minify
+### Author
+[Babalola Simeon](https://twitter.com/boasbabs)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### License
+MIT

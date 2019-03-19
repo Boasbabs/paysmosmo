@@ -1,86 +1,92 @@
 import React, { Component } from "react";
 import { Layout, Row, Col, Menu, Carousel, PageHeader, Button } from "antd";
+import axios from "axios";
+import { CATEGORY_ENDPOINT, ACCESS_TOKEN } from "../constants";
 import "./PageContent.css";
 
 const { Content } = Layout;
 const SubMenu = Menu.SubMenu;
 
-
 class PageContent extends Component {
-  state = {};
+  state = { categoryData: [] };
+
+  componentDidMount() {
+    // make API request
+    axios
+      .get(CATEGORY_ENDPOINT)
+      .then(response => {
+        // handle success
+        const categoryData = response.data;
+        this.setState({ categoryData });
+      })
+      .catch(function(error) {
+        // handle error
+        console.log(error);
+      });
+   
+  }
   render() {
+    // destruction categoryData from state
+    const { categoryData } = this.state;
     return (
       <React.Fragment>
         <Content className="page-content--container">
           <Row gutter={24}>
-            <Col xs={24} sm={24} md={12} lg={7} xl={7} className="side-menu--shadow">
+            <Col
+              xs={24}
+              sm={24}
+              md={12}
+              lg={7}
+              xl={7}
+              className="side-menu--shadow"
+            >
               <PageHeader title="Categories" className="page-content--header" />
               <Menu style={{ width: "100%", padding: 0 }} mode="vertical">
-                <SubMenu key="sub1" title={<span>Navigation One</span>}>
-                  <Menu.Item key="1">Option 1</Menu.Item>
-                  <Menu.Item key="2">Option 2</Menu.Item>
-                </SubMenu>
-                <SubMenu key="sub2" title={<span>Navigation Two</span>}>
-                  <Menu.Item key="5">Option 5</Menu.Item>
-                  <Menu.Item key="6">Option 6</Menu.Item>
-                </SubMenu>
-                <SubMenu key="sub3" title={<span>Navigation 3</span>}>
-                  <Menu.Item key="9">Option 9</Menu.Item>
-                </SubMenu>
-                <SubMenu key="sub4" title={<span>Navigation 4</span>}>
-                  <Menu.Item key="9">Option 9</Menu.Item>
-                </SubMenu>
-                <SubMenu key="sub5" title={<span>Navigation 5</span>}>
-                  <Menu.Item key="9">Option 9</Menu.Item>
-                </SubMenu>
-                <SubMenu key="sub6" title={<span>Navigation 6</span>}>
-                  <Menu.Item key="9">Option 9</Menu.Item>
-                </SubMenu>
-                <SubMenu key="sub7" title={<span>Navigation 7</span>}>
-                  <Menu.Item key="9">Option 9</Menu.Item>
-                </SubMenu>
-                <SubMenu key="sub8" title={<span>Navigation 8</span>}>
-                  <Menu.Item key="9">Option 9</Menu.Item>
-                </SubMenu>
+              {/* Iterate over the categoryData using Js Array map method */}
+                {categoryData.map(({ name, id }) => (
+                  <SubMenu key={id} title={<span>{name}</span>}>
+                    <Menu.Item key="1">Option 1</Menu.Item>
+                    <Menu.Item key="2">Option 2</Menu.Item>
+                  </SubMenu>
+                ))}
+                
               </Menu>
             </Col>
             <Col xs={24} sm={24} md={12} lg={17} xl={17}>
               <Carousel autoplay className="">
-
                 <div className="carousel ">
-                  <p className="carousel--header">
-                    New Collection 1
-                  </p>
-                  <p  className="carousel--text">
+                  <p className="carousel--header">New Collection 1</p>
+                  <p className="carousel--text">
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
                     its layout.
                   </p>
-                  <Button className="carousel--btn" size="large">Shop Now</Button>
+                  <Button className="carousel--btn" size="large">
+                    Shop Now
+                  </Button>
                 </div>
                 <div className="carousel ">
-                  <p className="carousel--header">
-                    New Collection 2
-                  </p>
-                  <p  className="carousel--text">
+                  <p className="carousel--header">New Collection 2</p>
+                  <p className="carousel--text">
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
                     its layout.
                   </p>
-                  <Button className="carousel--btn" size="large">Shop Now</Button>
+                  <Button className="carousel--btn" size="large">
+                    Shop Now
+                  </Button>
                 </div>
                 <div className="carousel ">
-                  <p className="carousel--header">
-                    New Collection 3
-                  </p>
-                  <p  className="carousel--text">
+                  <p className="carousel--header">New Collection 3</p>
+                  <p className="carousel--text">
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
                     its layout.
                   </p>
-                  <Button className="carousel--btn" size="large">Shop Now</Button>
+                  <Button className="carousel--btn" size="large">
+                    Shop Now
+                  </Button>
                 </div>
-
               </Carousel>
             </Col>
           </Row>
