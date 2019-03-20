@@ -4,10 +4,11 @@ import axios from "axios";
 
 import "./ProductSegment.css";
 import CardImage from "../images/card-image.jpg";
-import { PRODUCT_ENDPOINT } from "../constants";
+import { PRODUCT_ENDPOINT, ACCESS_TOKEN } from "../constants";
 
 const { Content } = Layout;
 
+//axios.defaults.headers.common['Authorization'] = ACCESS_TOKEN;
 class ProductSegment extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +18,7 @@ class ProductSegment extends Component {
   componentDidMount() {
     // make API request
     axios
-      .get(PRODUCT_ENDPOINT)
+      .get(PRODUCT_ENDPOINT, { headers: { Authorization: ACCESS_TOKEN } })
       .then(response => {
         // handle success
         const productData = response.data;
@@ -38,7 +39,7 @@ class ProductSegment extends Component {
         <Card title={heading} className="card-shadow">
           <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
           {/* Check if the data is fetched, else display loader */}
-            {productData.length == 0 ? (
+            {productData.length === 0 ? (
               <Skeleton active paragraph={{ rows: 6 }} />
             ) : (
               //Iterate over the productData using Js Array map method

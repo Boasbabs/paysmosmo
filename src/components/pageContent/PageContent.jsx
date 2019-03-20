@@ -16,13 +16,15 @@ import "./PageContent.css";
 const { Content } = Layout;
 const SubMenu = Menu.SubMenu;
 
+//axios.defaults.headers.common['Authorization'] = ACCESS_TOKEN;
+
 class PageContent extends Component {
   state = { categoryData: [] };
 
   componentDidMount() {
     // make API request
     axios
-      .get(CATEGORY_ENDPOINT)
+      .get(CATEGORY_ENDPOINT, { headers: { Authorization: ACCESS_TOKEN } })
       .then(response => {
         // handle success
         const categoryData = response.data;
@@ -51,11 +53,11 @@ class PageContent extends Component {
               <PageHeader title="Categories" className="page-content--header" />
               <Menu style={{ width: "100%", padding: 0 }} mode="vertical">
                 {/* Iterate over the categoryData using Js Array map method */}
-                {categoryData.length == 0 ? (
+                { categoryData.length === 0 ? (
                   // Display spinner while data is fetch
-                  <div className="loading-container">
-                  <Spin size="large" tip="Loading..." />
-                  </div>
+                  // <div className="loading-container">
+                    <Spin size="large" tip="Loading..." />
+                  // </div>
                 ) : (
                   categoryData.map(({ name, id }) => (
                     <SubMenu key={id} title={<span>{name}</span>}>
