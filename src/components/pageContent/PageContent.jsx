@@ -16,8 +16,6 @@ import "./PageContent.css";
 const { Content } = Layout;
 const SubMenu = Menu.SubMenu;
 
-//axios.defaults.headers.common['Authorization'] = ACCESS_TOKEN;
-
 class PageContent extends Component {
   state = { categoryData: [] };
 

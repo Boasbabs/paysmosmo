@@ -8,7 +8,6 @@ import { PRODUCT_ENDPOINT, ACCESS_TOKEN } from "../constants";
 
 const { Content } = Layout;
 
-//axios.defaults.headers.common['Authorization'] = ACCESS_TOKEN;
 class ProductSegment extends Component {
   constructor(props) {
     super(props);
