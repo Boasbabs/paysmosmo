@@ -1,0 +1,488 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageContent component it matches snapshot 1`] = `
+<main
+  className="page-content--container ant-layout-content"
+>
+  <div
+    className="ant-row"
+    style={
+      Object {
+        "marginLeft": -12,
+        "marginRight": -12,
+      }
+    }
+  >
+    <div
+      className="side-menu--shadow ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-lg-7 ant-col-xl-7"
+      style={
+        Object {
+          "paddingLeft": 12,
+          "paddingRight": 12,
+        }
+      }
+    >
+      <div
+        className="ant-page-header page-content--header"
+      >
+        <div
+          className="ant-page-header-title-view"
+        >
+          <span
+            className="ant-page-header-title-view-title"
+          >
+            Categories
+          </span>
+        </div>
+      </div>
+      <ul
+        className="ant-menu ant-menu-light ant-menu-root ant-menu-vertical"
+        onMouseEnter={[Function]}
+        onTransitionEnd={[Function]}
+        role="menu"
+        style={
+          Object {
+            "padding": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <li
+          className="ant-menu-item loading-container"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="menuitem"
+          style={Object {}}
+        >
+          <div
+            className="ant-spin ant-spin-lg ant-spin-spinning ant-spin-show-text"
+          >
+            <span
+              className="ant-spin-dot ant-spin-dot-spin"
+            >
+              <i />
+              <i />
+              <i />
+              <i />
+            </span>
+            <div
+              className="ant-spin-text"
+            >
+              Loading...
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-lg-17 ant-col-xl-17"
+      style={
+        Object {
+          "paddingLeft": 12,
+          "paddingRight": 12,
+        }
+      }
+    >
+      <div
+        className="ant-carousel"
+      >
+        <div
+          className="slick-slider slick-initialized"
+          dir="ltr"
+        >
+          <div
+            className="slick-list"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={null}
+            onMouseMove={null}
+            onMouseUp={[Function]}
+            onTouchCancel={null}
+            onTouchEnd={[Function]}
+            onTouchMove={null}
+            onTouchStart={[Function]}
+            style={Object {}}
+          >
+            <div
+              className="slick-track"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              style={
+                Object {
+                  "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                  "WebkitTransition": "",
+                  "msTransform": "translateX(0px)",
+                  "opacity": 1,
+                  "transform": "translate3d(0px, 0px, 0px)",
+                  "transition": "",
+                }
+              }
+            >
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={-1}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel "
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <p
+                      className="carousel--header"
+                    >
+                      New Collection 3
+                    </p>
+                    <p
+                      className="carousel--text"
+                    >
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                    <button
+                      className="ant-btn carousel--btn ant-btn-lg"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <span>
+                        Shop Now
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={false}
+                className="slick-slide slick-active slick-current"
+                data-index={0}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel "
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <p
+                      className="carousel--header"
+                    >
+                      New Collection 1
+                    </p>
+                    <p
+                      className="carousel--text"
+                    >
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                    <button
+                      className="ant-btn carousel--btn ant-btn-lg"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <span>
+                        Shop Now
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide"
+                data-index={1}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel "
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <p
+                      className="carousel--header"
+                    >
+                      New Collection 2
+                    </p>
+                    <p
+                      className="carousel--text"
+                    >
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                    <button
+                      className="ant-btn carousel--btn ant-btn-lg"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <span>
+                        Shop Now
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide"
+                data-index={2}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel "
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <p
+                      className="carousel--header"
+                    >
+                      New Collection 3
+                    </p>
+                    <p
+                      className="carousel--text"
+                    >
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                    <button
+                      className="ant-btn carousel--btn ant-btn-lg"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <span>
+                        Shop Now
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={3}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel "
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <p
+                      className="carousel--header"
+                    >
+                      New Collection 1
+                    </p>
+                    <p
+                      className="carousel--text"
+                    >
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                    <button
+                      className="ant-btn carousel--btn ant-btn-lg"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <span>
+                        Shop Now
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={4}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel "
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <p
+                      className="carousel--header"
+                    >
+                      New Collection 2
+                    </p>
+                    <p
+                      className="carousel--text"
+                    >
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                    <button
+                      className="ant-btn carousel--btn ant-btn-lg"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <span>
+                        Shop Now
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={5}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel "
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <p
+                      className="carousel--header"
+                    >
+                      New Collection 3
+                    </p>
+                    <p
+                      className="carousel--text"
+                    >
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                    <button
+                      className="ant-btn carousel--btn ant-btn-lg"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <span>
+                        Shop Now
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul
+            className="slick-dots"
+            onMouseEnter={null}
+            onMouseLeave={null}
+            onMouseOver={null}
+            style={
+              Object {
+                "display": "block",
+              }
+            }
+          >
+            <li
+              className="slick-active"
+            >
+              <button
+                onClick={[Function]}
+              >
+                1
+              </button>
+            </li>
+            <li
+              className=""
+            >
+              <button
+                onClick={[Function]}
+              >
+                2
+              </button>
+            </li>
+            <li
+              className=""
+            >
+              <button
+                onClick={[Function]}
+              >
+                3
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+`;
