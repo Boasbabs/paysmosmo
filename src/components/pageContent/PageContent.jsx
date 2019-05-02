@@ -53,14 +53,14 @@ class PageContent extends Component {
                 {/* Iterate over the categoryData using Js Array map method */}
                 {categoryData.length === 0 ? (
                   // Display spinner while data is fetch
-                  <div className="loading-container">
+                  <Menu.Item className="loading-container">
                     <Spin size="large" tip="Loading..." />
-                  </div>
+                  </Menu.Item>
                 ) : (
                   categoryData.map(({ name, id }) => (
                     <SubMenu key={id} title={<span>{name}</span>}>
-                      <Menu.Item key="1">Option 1</Menu.Item>
-                      <Menu.Item key="2">Option 2</Menu.Item>
+                      <Menu.Item key={`${id}1`}>Option 1</Menu.Item>
+                      <Menu.Item key={`${id}2`}>Option 2</Menu.Item>
                     </SubMenu>
                   ))
                 )}
